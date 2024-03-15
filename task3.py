@@ -16,10 +16,11 @@ if not cap.isOpened():
 
 while True:
     ret, frame = cap.read()
+    
 
     if not ret:
         break
-
+    cv2.resize(frame ,(280,280))
     frame_path = f'frame_{frame_count}.jpg'
     cv2.imwrite(frame_path, frame)
 
