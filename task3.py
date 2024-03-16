@@ -14,7 +14,7 @@ def save_frames(v_path, f_folder):
             break
         frame_count += 1
         path = f"frame_{frame_count}.jpg"
-        final_path = os.path.join(output_folder, path)
+        final_path = os.path.join(f_folder, path)
         cv2.imwrite(final_path, frame)
 
     cap.release()
