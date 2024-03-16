@@ -2,10 +2,10 @@ import cv2
 import os
 
 def save_frames(v_path, f_folder):
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
+    if not os.path.exists(f_folder):
+        os.makedirs(f_folder)
 
-    cap = cv2.VideoCapture(video_path)
+    cap = cv2.VideoCapture(v_path)
     frame_count = 0
 
     while True:
